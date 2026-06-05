@@ -6,7 +6,7 @@ Use this site as a static booking page. Static means there is no server code to 
 
 - Hosting: GitHub Pages for the public website
 - Domain: buy one domain through Cloudflare Registrar or another registrar
-- Form: connect a separate form service because GitHub Pages cannot process forms by itself
+- Form: FormSubmit emails submissions to `Lachlansnow798@gmail.com`
 
 ## Important
 
@@ -20,7 +20,7 @@ Use this site as a static booking page. Static means there is no server code to 
 4. Wait for the GitHub Pages URL to publish.
 5. Buy a domain only after the GitHub Pages URL works.
 6. Point the domain DNS to GitHub Pages.
-7. Connect the form to a real form service.
+7. Submit one test form and click the FormSubmit activation email if it arrives.
 
 ## First Domain Ideas
 

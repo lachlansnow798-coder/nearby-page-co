@@ -6,8 +6,8 @@ Simple one-page website for Nearby Page Co., a starter website service for small
 
 This site is designed to be hosted on GitHub Pages from the repository root.
 
-## Important Form Note
+## Form
 
-GitHub Pages hosts static files only. It does not process form submissions by itself.
+GitHub Pages hosts static files only, so the enquiry form is connected to FormSubmit.
 
-To collect real enquiries, connect the form to a service such as Formspree, FormSubmit, Tally, Google Forms, or switch hosting to Netlify Forms.
+Submissions are emailed to `Lachlansnow798@gmail.com`. The first real submission may require clicking a FormSubmit activation email.

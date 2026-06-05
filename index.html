@@ -56,11 +56,12 @@
           class="booking-card"
           name="website-enquiry"
           method="POST"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
-          action="thanks.html"
+          action="https://formsubmit.co/Lachlansnow798@gmail.com"
         >
-          <input type="hidden" name="form-name" value="website-enquiry">
+          <input type="hidden" name="_next" value="https://lachlansnow798-coder.github.io/nearby-page-co/thanks.html">
+          <input type="hidden" name="_subject" value="New Nearby Page Co website request">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" class="hidden-field" tabindex="-1" autocomplete="off">
           <p class="hidden-field">
             <label>Do not fill this out <input name="bot-field"></label>
           </p>
@@ -82,8 +83,13 @@
           </label>
 
           <label>
-            Email or Instagram
-            <input name="contact" type="text" autocomplete="email" required>
+            Email
+            <input name="email" type="email" autocomplete="email" required>
+          </label>
+
+          <label>
+            Instagram
+            <input name="instagram" type="text" placeholder="@businessname">
           </label>
 
           <label>

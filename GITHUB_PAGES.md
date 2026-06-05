@@ -10,17 +10,11 @@ Your public URL will usually look like:
 https://YOUR-GITHUB-USERNAME.github.io/nearby-page-co/
 ```
 
-## What GitHub Pages Does Not Do
+## Form Submissions
 
 GitHub Pages does not process form submissions. It can show the page, but it cannot collect booking requests unless the form is connected to a separate form service.
 
-Good zero-cost options:
-
-- Formspree
-- FormSubmit
-- Tally
-- Google Forms
-- Netlify Forms instead of GitHub Pages
+This site uses FormSubmit to email submissions to `Lachlansnow798@gmail.com`. The first real submission may require clicking a FormSubmit activation email.
 
 ## Deploy Steps
 
