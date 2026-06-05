@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nearby Page Co. | Simple Websites for Local Businesses</title>
+    <meta
+      name="description"
+      content="Simple one-page websites for local businesses across Melbourne's inner east."
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Nearby Page Co. home">
+        <span class="brand-mark">NP</span>
+        <span>Nearby Page Co.</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#book">Book</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Melbourne's inner east</p>
+          <h1 id="hero-title">A clean one-page website your customers can understand fast.</h1>
+          <p class="hero-text">
+            I build simple pages for local businesses that need services, prices, photos, location,
+            and booking details in one clear place.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#book">
+              <i data-lucide="calendar-check" aria-hidden="true"></i>
+              Request a page
+            </a>
+            <a class="button secondary" href="#pricing">
+              <i data-lucide="tag" aria-hidden="true"></i>
+              See price
+            </a>
+          </div>
+          <ul class="trust-list" aria-label="Service highlights">
+            <li><i data-lucide="clock-3" aria-hidden="true"></i> First draft in 48 hours</li>
+            <li><i data-lucide="map-pin" aria-hidden="true"></i> Built for local customers</li>
+            <li><i data-lucide="message-circle" aria-hidden="true"></i> Easy enquiry button</li>
+          </ul>
+        </div>
+
+        <form
+          id="book"
+          class="booking-card"
+          name="website-enquiry"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          action="/thanks.html"
+        >
+          <input type="hidden" name="form-name" value="website-enquiry">
+          <p class="hidden-field">
+            <label>Do not fill this out <input name="bot-field"></label>
+          </p>
+
+          <div class="form-heading">
+            <p class="eyebrow">Start here</p>
+            <h2>Request a website draft</h2>
+            <p>Send the basics. I will reply with the next step and a rough example idea.</p>
+          </div>
+
+          <label>
+            Business name
+            <input name="business-name" type="text" autocomplete="organization" required>
+          </label>
+
+          <label>
+            Your name
+            <input name="name" type="text" autocomplete="name" required>
+          </label>
+
+          <label>
+            Email or Instagram
+            <input name="contact" type="text" autocomplete="email" required>
+          </label>
+
+          <label>
+            What do you need?
+            <select name="website-type" required>
+              <option value="">Choose one</option>
+              <option>Simple info and booking page</option>
+              <option>Services and pricing page</option>
+              <option>Menu or product page</option>
+              <option>I am not sure yet</option>
+            </select>
+          </label>
+
+          <label>
+            Tell me what customers ask you most
+            <textarea
+              name="customer-questions"
+              rows="4"
+              placeholder="Example: prices, opening hours, booking link, suburbs covered..."
+              required
+            ></textarea>
+          </label>
+
+          <button class="button primary full" type="submit">
+            <i data-lucide="send" aria-hidden="true"></i>
+            Send request
+          </button>
+          <p class="form-note">No payment is needed until you have seen the first preview.</p>
+        </form>
+      </section>
+
+      <section class="preview-band" aria-labelledby="preview-title">
+        <div class="section-copy">
+          <p class="eyebrow">What you get</p>
+          <h2 id="preview-title">One page that answers the obvious questions.</h2>
+        </div>
+        <div class="page-preview" aria-label="Example website layout preview">
+          <div class="preview-browser">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="preview-content">
+            <div class="preview-hero">
+              <div>
+                <div class="preview-pill"></div>
+                <div class="preview-title"></div>
+                <div class="preview-line short"></div>
+              </div>
+              <div class="preview-photo" aria-hidden="true"></div>
+            </div>
+            <div class="preview-grid">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="content-section" aria-labelledby="work-title">
+        <div class="section-copy">
+          <p class="eyebrow">Built for</p>
+          <h2 id="work-title">Small businesses that need customers to act.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <i data-lucide="scissors" aria-hidden="true"></i>
+            <h3>Beauty and grooming</h3>
+            <p>Services, prices, photos, opening hours, and a booking link.</p>
+          </article>
+          <article class="feature-card">
+            <i data-lucide="dumbbell" aria-hidden="true"></i>
+            <h3>Fitness and classes</h3>
+            <p>Programs, timetable, location, FAQs, and enquiry button.</p>
+          </article>
+          <article class="feature-card">
+            <i data-lucide="wrench" aria-hidden="true"></i>
+            <h3>Local services</h3>
+            <p>Suburbs covered, quote details, proof of work, and contact details.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="pricing" class="pricing-section" aria-labelledby="pricing-title">
+        <div class="section-copy">
+          <p class="eyebrow">Starter offer</p>
+          <h2 id="pricing-title">Simple price. Small scope.</h2>
+        </div>
+        <div class="pricing-layout">
+          <article class="price-card">
+            <div>
+              <p class="price-label">Early local build</p>
+              <p class="price">$80</p>
+              <p class="price-detail">One-page website draft and setup.</p>
+            </div>
+            <ul>
+              <li><i data-lucide="check" aria-hidden="true"></i> Services or product info</li>
+              <li><i data-lucide="check" aria-hidden="true"></i> Photos and business details</li>
+              <li><i data-lucide="check" aria-hidden="true"></i> Contact or booking button</li>
+              <li><i data-lucide="check" aria-hidden="true"></i> Two small rounds of edits</li>
+            </ul>
+            <a class="button primary full" href="#book">
+              <i data-lucide="arrow-right" aria-hidden="true"></i>
+              Request a draft
+            </a>
+          </article>
+          <div class="scope-panel">
+            <h3>Kept simple on purpose</h3>
+            <p>
+              This is for businesses that need one clear page, not a giant website. If you need
+              online payments, member accounts, or custom software, I will say that upfront.
+            </p>
+            <div class="scope-list">
+              <span><i data-lucide="badge-alert" aria-hidden="true"></i> No fake guarantees</span>
+              <span><i data-lucide="file-text" aria-hidden="true"></i> Clear business info</span>
+              <span><i data-lucide="smartphone" aria-hidden="true"></i> Mobile-first layout</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Nearby Page Co. Simple websites for local businesses.</p>
+      <a href="#book">Request a page</a>
+    </footer>
+  </body>
+</html>
